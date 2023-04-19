@@ -1,0 +1,1 @@
+C:\Users\ryo\AppData\Roaming\espansoにconfig/とmatch/をおく
