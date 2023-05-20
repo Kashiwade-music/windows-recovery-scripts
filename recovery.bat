@@ -12,5 +12,5 @@ winget install -e --id Microsoft.PowerToys
 winget install --id Microsoft.VisualStudioCode --silent --override "/VERYSILENT /NORESTART /MERGETASKS=!runcode,addcontextmenufiles,addcontextmenufolders,associatewithfiles,addtopath"
 winget install -e --id wez.wezterm
 
-./setup.ps1
-./setupWSL.ps1
+PowerShell -ExecutionPolicy Unrestricted ./setup.ps1
+PowerShell -ExecutionPolicy Unrestricted ./setupWSL.ps1
