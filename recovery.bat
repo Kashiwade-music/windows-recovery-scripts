@@ -9,4 +9,8 @@ winget install -e --id Mozilla.Thunderbird
 winget install -e --id OBSProject.OBSStudio
 winget install -e --id Microsoft.PowerShell
 winget install -e --id Microsoft.PowerToys
-winget install wez.wezterm
+winget install --id Microsoft.VisualStudioCode --silent --override "/VERYSILENT /NORESTART /MERGETASKS=!runcode,addcontextmenufiles,addcontextmenufolders,associatewithfiles,addtopath"
+winget install -e --id wez.wezterm
+
+./setup.ps1
+./setupWSL.ps1
