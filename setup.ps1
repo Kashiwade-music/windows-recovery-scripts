@@ -13,7 +13,6 @@ function Get-YNAnswer {
 function Install-Espanso {
     # open URL https://espanso.org
     Write-Host -ForegroundColor Green "Open URL https://espanso.org"
-    Invoke-Item https://espanso.org
     Get-YNAnswer "Have you installed espanso?"
 }
 Install-Espanso
@@ -21,7 +20,6 @@ Install-Espanso
 function Get-Wallpaper {
     # download from https://drive.google.com/file/d/18NYc7_gI2C1dKb964DpZ8NAoWZh4RlKI/view?usp=sharing
     Write-Host -ForegroundColor Green "Download wallpaper from https://drive.google.com/file/d/18NYc7_gI2C1dKb964DpZ8NAoWZh4RlKI/view?usp=sharing"
-    Invoke-Item https://drive.google.com/file/d/18NYc7_gI2C1dKb964DpZ8NAoWZh4RlKI/view?usp=sharing
     Get-YNAnswer "Have you downloaded?"
 }
 Get-Wallpaper
