@@ -14,4 +14,3 @@ winget install -e --id wez.wezterm
 winget install JanDeDobbeleer.OhMyPosh -s winget
 
 PowerShell -ExecutionPolicy Unrestricted ./setup.ps1
-PowerShell -ExecutionPolicy Unrestricted ./setupWSL.ps1

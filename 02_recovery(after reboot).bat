@@ -1,0 +1,1 @@
+PowerShell -ExecutionPolicy Unrestricted ./setupWSL.ps1
