@@ -29,5 +29,9 @@ apt update
 apt install -y powershell
 # install homebrew
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
+test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+test -r ~/.bash_profile && echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >>~/.bash_profile
+echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >>~/.profile
 # install oh-my-posh
 brew install jandedobbeleer/oh-my-posh/oh-my-posh
