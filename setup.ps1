@@ -35,6 +35,7 @@ function Install-PowershellConfig {
     Copy-Item -Path ./powershell -Destination "$env:USERPROFILE\Documents\PowerShell" -Recurse
     Write-Host -ForegroundColor Green "powershell config is installed."
 }
+Install-PowershellConfig
 
 # set contents of ./wezterm at ~/.
 function Install-WeztermConfig {
