@@ -46,3 +46,11 @@ echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >>~/.profile
 
 # install oh-my-posh
 brew install jandedobbeleer/oh-my-posh/oh-my-posh
+
+# touch and write pwsh $PROFILE
+mkdir -p ~/.config/powershell
+touch ~/.config/powershell/profile.ps1
+echo "oh-my-posh init pwsh --config ~\night-owl.omp.json | Invoke-Expression" >>~/.config/powershell/Microsoft.Powershell_profile.ps1
+
+# change default shell to pwsh
+chsh -s /usr/bin/pwsh
