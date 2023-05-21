@@ -23,7 +23,7 @@ function Install-WSL {
     # install powershell
     wsl -d Ubuntu -u root -- apt update
     wsl -d Ubuntu -u root -- apt-get install -y wget apt-transport-https software-properties-common
-    wsl -d Ubuntu -u root -- wget -q "https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/packages-microsoft-prod.deb"
+    wsl -d Ubuntu -u root -- 'wget -q "https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/packages-microsoft-prod.deb"'
     wsl -d Ubuntu -u root -- dpkg -i packages-microsoft-prod.deb
     wsl -d Ubuntu -u root -- rm packages-microsoft-prod.deb
     wsl -d Ubuntu -u root -- apt update
