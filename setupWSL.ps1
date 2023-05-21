@@ -5,8 +5,8 @@ function Install-WSL {
     # copy .\setupWSL.sh to ~/setupWSL.sh in WSL Ubuntu
     $CurrentWorkingDir = (Get-Location).Path.Replace("\", "/").Replace("C:", "/mnt/c")
     # replace "\" to "/" in $CurrentWorkingDir
-    wsl -d Ubuntu -u root -- cp "$CurrentWorkingDir/setupWSL.sh" ~/
+    wsl -d Ubuntu -- cp "$CurrentWorkingDir/setupWSL.sh" ~/
     # run setupWSL.sh
-    wsl -d Ubuntu -u root -- bash ~/setupWSL.sh
+    wsl -d Ubuntu -- bash ~/setupWSL.sh
 }
 Install-WSL
