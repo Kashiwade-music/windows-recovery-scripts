@@ -11,6 +11,7 @@ winget install -e --id Microsoft.PowerShell
 winget install -e --id Microsoft.PowerToys
 winget install --id Microsoft.VisualStudioCode --silent --override "/VERYSILENT /NORESTART /MERGETASKS=!runcode,addcontextmenufiles,addcontextmenufolders,associatewithfiles,addtopath"
 winget install -e --id wez.wezterm
+winget install JanDeDobbeleer.OhMyPosh -s winget
 
 PowerShell -ExecutionPolicy Unrestricted ./setup.ps1
 PowerShell -ExecutionPolicy Unrestricted ./setupWSL.ps1
