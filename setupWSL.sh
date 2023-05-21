@@ -50,7 +50,7 @@ brew install jandedobbeleer/oh-my-posh/oh-my-posh
 # touch and write pwsh $PROFILE
 mkdir -p ~/.config/powershell
 touch ~/.config/powershell/profile.ps1
-echo "oh-my-posh init pwsh --config ~\night-owl.omp.json | Invoke-Expression" >>~/.config/powershell/profile.ps1
+echo "oh-my-posh init pwsh --config $(brew --prefix oh-my-posh)/themes/night-owl.omp.json | Invoke-Expression" >>~/.config/powershell/profile.ps1
 
 # change default shell to pwsh
 chsh -s /usr/bin/pwsh
